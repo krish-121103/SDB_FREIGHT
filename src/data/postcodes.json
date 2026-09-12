@@ -1,0 +1,482 @@
+[
+  {
+    "postcode": "3000",
+    "suburb": "Melbourne CBD",
+    "state": "VIC",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "3004",
+    "suburb": "St Kilda Rd",
+    "state": "VIC",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "3051",
+    "suburb": "North Melbourne",
+    "state": "VIC",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "3121",
+    "suburb": "Richmond",
+    "state": "VIC",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "3141",
+    "suburb": "South Yarra",
+    "state": "VIC",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "3168",
+    "suburb": "Clayton",
+    "state": "VIC",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "3175",
+    "suburb": "Dandenong",
+    "state": "VIC",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "3020",
+    "suburb": "Sunshine",
+    "state": "VIC",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "3030",
+    "suburb": "Werribee",
+    "state": "VIC",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "3046",
+    "suburb": "Glenroy",
+    "state": "VIC",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "2000",
+    "suburb": "Sydney CBD",
+    "state": "NSW",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "2010",
+    "suburb": "Surry Hills",
+    "state": "NSW",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "2060",
+    "suburb": "North Sydney",
+    "state": "NSW",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "2148",
+    "suburb": "Blacktown",
+    "state": "NSW",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "2150",
+    "suburb": "Parramatta",
+    "state": "NSW",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "2170",
+    "suburb": "Liverpool",
+    "state": "NSW",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "2200",
+    "suburb": "Bankstown",
+    "state": "NSW",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "4000",
+    "suburb": "Brisbane CBD",
+    "state": "QLD",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "4101",
+    "suburb": "South Brisbane",
+    "state": "QLD",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "4064",
+    "suburb": "Milton",
+    "state": "QLD",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "4113",
+    "suburb": "Eight Mile Plains",
+    "state": "QLD",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "5000",
+    "suburb": "Adelaide CBD",
+    "state": "SA",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "5067",
+    "suburb": "Norwood",
+    "state": "SA",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "5082",
+    "suburb": "Prospect",
+    "state": "SA",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "6000",
+    "suburb": "Perth CBD",
+    "state": "WA",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "6008",
+    "suburb": "Subiaco",
+    "state": "WA",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "6100",
+    "suburb": "Victoria Park",
+    "state": "WA",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "2600",
+    "suburb": "Canberra",
+    "state": "ACT",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "2601",
+    "suburb": "Acton",
+    "state": "ACT",
+    "zone": "METRO"
+  },
+  {
+    "postcode": "2250",
+    "suburb": "Gosford",
+    "state": "NSW",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "2300",
+    "suburb": "Newcastle",
+    "state": "NSW",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "2500",
+    "suburb": "Wollongong",
+    "state": "NSW",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "2650",
+    "suburb": "Wagga Wagga",
+    "state": "NSW",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "2800",
+    "suburb": "Orange",
+    "state": "NSW",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "3220",
+    "suburb": "Geelong",
+    "state": "VIC",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "3350",
+    "suburb": "Ballarat",
+    "state": "VIC",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "3550",
+    "suburb": "Bendigo",
+    "state": "VIC",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "3630",
+    "suburb": "Shepparton",
+    "state": "VIC",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "3840",
+    "suburb": "Morwell / Traralgon",
+    "state": "VIC",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "4217",
+    "suburb": "Gold Coast / Surfers Paradise",
+    "state": "QLD",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "4350",
+    "suburb": "Toowoomba",
+    "state": "QLD",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "4551",
+    "suburb": "Caloundra / Sunshine Coast",
+    "state": "QLD",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "4740",
+    "suburb": "Mackay",
+    "state": "QLD",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "4810",
+    "suburb": "Townsville",
+    "state": "QLD",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "4870",
+    "suburb": "Cairns",
+    "state": "QLD",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "5290",
+    "suburb": "Mount Gambier",
+    "state": "SA",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "6230",
+    "suburb": "Bunbury",
+    "state": "WA",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "7250",
+    "suburb": "Launceston",
+    "state": "TAS",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "7000",
+    "suburb": "Hobart",
+    "state": "TAS",
+    "zone": "MAJOR_REGIONAL"
+  },
+  {
+    "postcode": "2350",
+    "suburb": "Armidale",
+    "state": "NSW",
+    "zone": "OTHER_REGIONAL"
+  },
+  {
+    "postcode": "2460",
+    "suburb": "Grafton",
+    "state": "NSW",
+    "zone": "OTHER_REGIONAL"
+  },
+  {
+    "postcode": "2705",
+    "suburb": "Leeton",
+    "state": "NSW",
+    "zone": "OTHER_REGIONAL"
+  },
+  {
+    "postcode": "2830",
+    "suburb": "Dubbo Rural",
+    "state": "NSW",
+    "zone": "OTHER_REGIONAL"
+  },
+  {
+    "postcode": "3260",
+    "suburb": "Colac",
+    "state": "VIC",
+    "zone": "OTHER_REGIONAL"
+  },
+  {
+    "postcode": "3300",
+    "suburb": "Hamilton",
+    "state": "VIC",
+    "zone": "OTHER_REGIONAL"
+  },
+  {
+    "postcode": "3400",
+    "suburb": "Horsham",
+    "state": "VIC",
+    "zone": "OTHER_REGIONAL"
+  },
+  {
+    "postcode": "3730",
+    "suburb": "Yarrawonga",
+    "state": "VIC",
+    "zone": "OTHER_REGIONAL"
+  },
+  {
+    "postcode": "3880",
+    "suburb": "Bairnsdale",
+    "state": "VIC",
+    "zone": "OTHER_REGIONAL"
+  },
+  {
+    "postcode": "4405",
+    "suburb": "Dalby",
+    "state": "QLD",
+    "zone": "OTHER_REGIONAL"
+  },
+  {
+    "postcode": "4670",
+    "suburb": "Bundaberg Regional",
+    "state": "QLD",
+    "zone": "OTHER_REGIONAL"
+  },
+  {
+    "postcode": "4700",
+    "suburb": "Rockhampton Rural",
+    "state": "QLD",
+    "zone": "OTHER_REGIONAL"
+  },
+  {
+    "postcode": "5330",
+    "suburb": "Nuriootpa / Barossa",
+    "state": "SA",
+    "zone": "OTHER_REGIONAL"
+  },
+  {
+    "postcode": "5540",
+    "suburb": "Port Pirie",
+    "state": "SA",
+    "zone": "OTHER_REGIONAL"
+  },
+  {
+    "postcode": "6430",
+    "suburb": "Kalgoorlie",
+    "state": "WA",
+    "zone": "OTHER_REGIONAL"
+  },
+  {
+    "postcode": "6530",
+    "suburb": "Geraldton",
+    "state": "WA",
+    "zone": "OTHER_REGIONAL"
+  },
+  {
+    "postcode": "7310",
+    "suburb": "Devonport",
+    "state": "TAS",
+    "zone": "OTHER_REGIONAL"
+  },
+  {
+    "postcode": "0870",
+    "suburb": "Alice Springs",
+    "state": "NT",
+    "zone": "REMOTE"
+  },
+  {
+    "postcode": "0872",
+    "suburb": "Central Desert / Remote NT",
+    "state": "NT",
+    "zone": "REMOTE"
+  },
+  {
+    "postcode": "0822",
+    "suburb": "Arnhem Land Remote",
+    "state": "NT",
+    "zone": "REMOTE"
+  },
+  {
+    "postcode": "2898",
+    "suburb": "Lord Howe Island",
+    "state": "NSW",
+    "zone": "REMOTE"
+  },
+  {
+    "postcode": "2899",
+    "suburb": "Norfolk Island",
+    "state": "NSW",
+    "zone": "REMOTE"
+  },
+  {
+    "postcode": "4875",
+    "suburb": "Thursday Island / Torres Strait",
+    "state": "QLD",
+    "zone": "REMOTE"
+  },
+  {
+    "postcode": "4825",
+    "suburb": "Mount Isa Remote",
+    "state": "QLD",
+    "zone": "REMOTE"
+  },
+  {
+    "postcode": "4892",
+    "suburb": "Cape York Outback",
+    "state": "QLD",
+    "zone": "REMOTE"
+  },
+  {
+    "postcode": "5690",
+    "suburb": "Ceduna Remote",
+    "state": "SA",
+    "zone": "REMOTE"
+  },
+  {
+    "postcode": "5723",
+    "suburb": "Coober Pedy",
+    "state": "SA",
+    "zone": "REMOTE"
+  },
+  {
+    "postcode": "6721",
+    "suburb": "Port Hedland Outback",
+    "state": "WA",
+    "zone": "REMOTE"
+  },
+  {
+    "postcode": "6725",
+    "suburb": "Broome Kimberley Remote",
+    "state": "WA",
+    "zone": "REMOTE"
+  },
+  {
+    "postcode": "6798",
+    "suburb": "Christmas Island",
+    "state": "WA",
+    "zone": "REMOTE"
+  },
+  {
+    "postcode": "6799",
+    "suburb": "Cocos (Keeling) Islands",
+    "state": "WA",
+    "zone": "REMOTE"
+  }
+]

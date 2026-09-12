@@ -1,0 +1,75 @@
+{
+  "totalRowsScanned": 411,
+  "uniqueSkus": 409,
+  "duplicateSkusCount": 2,
+  "duplicateSkus": [
+    {
+      "sku": "OMV5998",
+      "rowNumbers": [
+        59,
+        64
+      ],
+      "count": 2
+    },
+    {
+      "sku": "OMV6231",
+      "rowNumbers": [
+        60,
+        65
+      ],
+      "count": 2
+    }
+  ],
+  "missingPhysicalDataCount": 5,
+  "missingPhysicalData": [
+    {
+      "rowNumber": 77,
+      "sku": "6FLAPVC",
+      "missingFields": [
+        "lengthMm",
+        "widthMm",
+        "heightMm",
+        "weightKg"
+      ]
+    },
+    {
+      "rowNumber": 150,
+      "sku": "PSC1818",
+      "missingFields": [
+        "lengthMm",
+        "widthMm",
+        "heightMm",
+        "weightKg"
+      ]
+    },
+    {
+      "rowNumber": 181,
+      "sku": "2525SP",
+      "missingFields": [
+        "lengthMm",
+        "widthMm",
+        "heightMm",
+        "weightKg"
+      ]
+    },
+    {
+      "rowNumber": 258,
+      "sku": "PROF18",
+      "missingFields": [
+        "lengthMm",
+        "widthMm",
+        "heightMm",
+        "weightKg"
+      ]
+    },
+    {
+      "rowNumber": 337,
+      "sku": "PFWDCART",
+      "missingFields": [
+        "weightKg"
+      ]
+    }
+  ],
+  "missingTypeCount": 39,
+  "missingUpcCount": 37
+}
