@@ -1,16 +1,18 @@
 import React from 'react';
-import { Truck, Settings, Database } from 'lucide-react';
+import { Truck, Settings, Database, FileUp } from 'lucide-react';
 import type { DataQualityReport } from '../types';
 
 interface HeaderProps {
   onOpenConfig: () => void;
   onOpenDataQuality: () => void;
+  onOpenOrderImport: () => void;
   dataQualityReport: DataQualityReport;
 }
 
 export const Header: React.FC<HeaderProps> = ({
   onOpenConfig,
   onOpenDataQuality,
+  onOpenOrderImport,
   dataQualityReport,
 }) => {
   const issuesCount =
@@ -36,6 +38,21 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         <div className="header-actions">
+          <button
+            className="btn-primary"
+            onClick={onOpenOrderImport}
+            title="Import an order from PDF or manual text"
+            style={{
+              background: 'linear-gradient(135deg, #0284c7 0%, #0369a1 100%)',
+              borderColor: '#0284c7',
+              color: '#ffffff',
+              fontWeight: 600,
+            }}
+          >
+            <FileUp size={16} />
+            Import Order (PDF / Text)
+          </button>
+
           <button
             className="btn-secondary"
             onClick={onOpenDataQuality}

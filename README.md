@@ -66,13 +66,54 @@ Extracted from `Weights and Dimensions 10.8.26.xlsx` (411 rows):
 
 ---
 
+## 📄 Order Import / Order Parser Module
+
+A standalone, modular service enabling staff to import customer purchase orders, invoices, emails, and WhatsApp messages directly into the Freight Calculator without modifying the underlying freight engine.
+
+### Pipeline Architecture
+```
+PDF Upload (Digital or Scanned) ───► pdfjs-dist / Tesseract OCR ──┐
+                                                                 │
+Manual Text Input (Email/Chat/Copy-Paste) ───────────────────────┼──► Unified Text Parser
+                                                                 │        ↓
+                                                                 │    Structured Order JSON
+                                                                 │        ↓
+                                                                 │    Review & Edit Screen
+                                                                 │        ↓
+                                                                 └──► Confirm Order
+                                                                          ↓
+                                                                 Freight Calculator Engine
+```
+
+### Key Features
+1. **Dual Input Modes**:
+   - **PDF Upload**: Drag-and-drop or browse PDF files. Automatically extracts text using PDF.js. If the PDF is scanned or image-based (< 25 characters of digital text), it seamlessly triggers a high-DPI Tesseract.js OCR fallback. Includes a "Force OCR" toggle for degraded scans.
+   - **Manual Text Input**: Large text area with demo presets (`Sydney BBQs`, `Invoice Table with Prices`, `Needs Review Sample`).
+2. **Intelligent Order Extraction**:
+   - **Order Header**: Extracts Customer Name, PO / Order Number, Order Date, Contact Person, and Delivery/Billing Address.
+   - **Postcode Detection**: Automatically parses 4-digit Australian postcodes from the delivery address (e.g. `INGLEBURN 2565` -> `2565`) to set the destination zone.
+   - **Line Items**: Supports diverse layouts including multiplier-first (`2 X OM2017-1B`), SKU-first (`OM2017-1B x 2`), tabular columns with unit/total prices, and catalog token scanning.
+   - **Product Attributes**: Extracts size, colour, pack size, and unit/total pricing.
+3. **Confidence Scoring & Parsing Issue Flags**:
+   - Flags suspicious characters, incomplete SKUs, missing/zero quantities, uncatalogued products, and low OCR confidence with amber/red `⚠ Needs Review` badges.
+4. **Review & Confirmation Screen**:
+   - Inline editable table: modify SKU, description, quantity, and prices.
+   - Product catalog autocomplete against 408 SDB products.
+   - Add missing lines, delete lines, and edit delivery addresses.
+   - Collapsible **"View Raw Source Text"** drawer to trace where extracted lines originated.
+5. **Seamless Freight Engine Integration**:
+   - Adapter converts confirmed items to `OrderLine[]`, sets delivery postcode, and computes order value without altering any existing freight calculation logic.
+
+---
+
 ## 🛠️ Technology Stack
 
-- **Frontend**: React 18 + TypeScript
+- **Frontend**: React 19 + TypeScript
 - **Bundler & Tooling**: Vite
 - **Styling**: Vanilla CSS (Executive Light / White B2B theme)
 - **Icons**: Lucide React
-- **Testing**: Vitest (Automated test suite covering all policy scenarios)
+- **Document Processing**: `pdfjs-dist` (digital PDF) + `tesseract.js` (client-side OCR)
+- **Testing**: Vitest (25 automated test suites covering freight scenarios, parser, adapter, and e2e integration)
 
 ---
 
@@ -98,3 +139,4 @@ npx vitest run
 ```bash
 npm run build
 ```
+

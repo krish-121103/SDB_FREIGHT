@@ -20,6 +20,7 @@ interface OrderBuilderProps {
   onUpdateQuantity: (id: string, qty: number) => void;
   onToggleBulky: (id: string) => void;
   onRemoveLine: (id: string) => void;
+  onOpenOrderImport?: () => void;
   config: AppConfig;
 }
 
@@ -29,6 +30,7 @@ export const OrderBuilder: React.FC<OrderBuilderProps> = ({
   onUpdateQuantity,
   onToggleBulky,
   onRemoveLine,
+  onOpenOrderImport,
   config,
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -88,9 +90,31 @@ export const OrderBuilder: React.FC<OrderBuilderProps> = ({
           <Layers size={18} color="#38bdf8" />
           Order Builder & Product Lines
         </h2>
-        <span className="panel-badge">
-          {orderLines.length} line{orderLines.length !== 1 ? 's' : ''} added
-        </span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          {onOpenOrderImport && (
+            <button
+              className="btn-secondary"
+              onClick={onOpenOrderImport}
+              style={{
+                fontSize: '0.78rem',
+                padding: '4px 10px',
+                background: '#f0f9ff',
+                color: '#0284c7',
+                border: '1px solid #bae6fd',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '5px',
+              }}
+              title="Import order lines from PDF or raw text"
+            >
+              <PackagePlus size={14} />
+              Import Order
+            </button>
+          )}
+          <span className="panel-badge">
+            {orderLines.length} line{orderLines.length !== 1 ? 's' : ''} added
+          </span>
+        </div>
       </div>
 
       {/* Add Product Search Toolbar */}
