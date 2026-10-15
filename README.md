@@ -31,6 +31,37 @@ Final Freight Ex GST, GST (10%), and Total Inc GST
 
 ---
 
+## 🚀 Guided Step-by-Step Workflow & Temporary Session Storage
+
+The application provides a guided 4-step wizard workflow that enforces logistical validation at each stage, while preserving all calculated orders in volatile in-memory JavaScript storage:
+
+1. **Step 1: Delivery & Zone**:
+   - Customer Name, PO Reference, and internal notes.
+   - 4-digit AU Postcode auto-detects destination zone (`Metro`, `Major Regional`, `Other Regional`, `Remote`).
+   - Order Value input with interactive progress meter towards the **$700 Free Metro Freight** threshold.
+2. **Step 2: Order Items & Cargo Specs**:
+   - Search & add SKUs from the 411-product catalog.
+   - Live physical tallies: Total units, gross weight (kg), total shipment volume (m³), and designated bulky units.
+   - Flagging of incomplete product master dimensions.
+3. **Step 3: Packaging & Pallet Review**:
+   - Live pallet utilization gauges (volume % and weight %).
+   - Guardrail checks: **No Double-Charging Rule** (bulky fees waived on pallets) and **Warehouse Review Alert** (3+ bulky items).
+   - Staff override toggle to force pallet consolidation.
+4. **Step 4: Freight Quote & Approval**:
+   - Full GST and Ex GST financial breakdown with itemized calculation codes.
+   - Explainable policy audit trail ("Why this rate was calculated").
+   - **"Approve & Save Quote to Temporary Session"** action.
+
+### ⚡ Temporary In-Memory JavaScript Storage
+All approved quotes are kept in runtime JavaScript memory (`sessionStore.ts`). Users can switch to the **"Temporary Session Orders"** tab to:
+- View all quotes generated during the session with live aggregate metrics (Total Freight Quoted, Orders count, Average Freight).
+- Filter by destination zone or search by Customer / PO #.
+- Inspect any quote in full audit detail or **reload an order back into the workflow**.
+- Export the session quotes as JSON.
+- **Automatic Reset on Refresh**: As requested, reloading or refreshing the browser tab completely resets the JS memory store, providing a pristine demonstration slate without polluting database records.
+
+---
+
 ## 📋 Source Policy Rules & Pricing
 
 All prices are **Ex GST**:
